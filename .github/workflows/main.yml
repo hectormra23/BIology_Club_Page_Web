@@ -1,4 +1,4 @@
-name: main
+name: Update Website
 
 on:
   push:
@@ -15,12 +15,12 @@ jobs:
 
       - name: Copy files
         run: |
-          cp -R ${{ github.workspace }}/* https://github.com/hectormra23/BIology_Club_Page_Web.git
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git clone https://github.com/hectormra23/BIology_Club_Page_Web.git /C:\Users\hecto\OneDrive\Escritorio
+          cp -R ${{ github.workspace }}/* /path/to/your/local/directory
+          cd /path/to/your/local/directory
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add .
           git commit -m "Update website from GitHub Desktop"
           git push
+
