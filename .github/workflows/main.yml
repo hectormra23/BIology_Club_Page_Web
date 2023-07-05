@@ -1,15 +1,26 @@
+name: main
+
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
+
 jobs:
-  build:
+  update_website:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build and Deploy
+      - name: Copy files
         run: |
+          cp -R ${{ github.workspace }}/* https://github.com/hectormra23/BIology_Club_Page_Web.git
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Update website from GitHub Desktop"
+          git push
