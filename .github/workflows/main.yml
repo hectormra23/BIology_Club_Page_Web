@@ -15,7 +15,7 @@ jobs:
 
       - name: Copy files
         run: |
-          git clone https://github.com/hectormra23/BIology_Club_Page_Web.git /C:\Users\hecto\OneDrive\Escritorio
+          git clone https://github.com/hectormra23/BIology_Club_Page_Web.git C:\Users\hecto\OneDrive\Escritorio\BIology_Club_Page_Web-main
           cp -R ${{ github.workspace }}/* /path/to/your/local/directory
           cd /path/to/your/local/directory
           git config user.name "GitHub Actions"
