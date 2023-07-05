@@ -140,9 +140,9 @@ audio {
     font-size: 48px;
     text-align: center;
     margin-top: 500px;
-  }
-  
-  #countdown .countdown-box {
+}
+
+#countdown .countdown-box {
     display: inline-block;
     margin: 0 10px;
     width: 80px;
@@ -153,9 +153,9 @@ audio {
     color: #ffffff;
     line-height: 80px;
     text-align: center;
-  }
-  
-  #countdown .unit {
+}
+
+#countdown .unit {
     font-size: 24px;
     color: #ffffff;
-  }
+}
