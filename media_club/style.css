@@ -7,7 +7,6 @@ padding: 0;
 
 body {
 font-family: "Work Sans", sans-serif;
-letter-spacing: 2vmin;
 display: flex;  
 height: 100vh;
 width: 100vw;
@@ -63,9 +62,11 @@ transform: translateY(-0.8em);
     cursor: pointer;
 }
 
-  #vision
-  {
-
+#vision 
+{
+    background-color: #4b4646;
     color: white;
     font-style: normal;
-  }
+    padding: 20px;
+    border-radius: 10px;
+}
