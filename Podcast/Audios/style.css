@@ -120,17 +120,42 @@ transform: translateY(-0.8em);
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.audio-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+audio {
+    margin-bottom: 10px;
+}
+.audio-wrapper h {
+    color: rgb(17, 161, 36);
+    font-style: italic;
+}  
+
+/* Estilos para la cuenta regresiva */
+#countdown {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 500px;
   }
   
-  .audio-wrapper {
-    margin-bottom: 20px;
+  #countdown .countdown-box {
+    display: inline-block;
+    margin: 0 10px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 80px;
     text-align: center;
   }
   
-  audio {
-    margin-bottom: 10px;
+  #countdown .unit {
+    font-size: 24px;
+    color: #ffffff;
   }
-  .audio-wrapper h {
-    color: rgb(17, 161, 36);
-    font-style: italic;
-  }  

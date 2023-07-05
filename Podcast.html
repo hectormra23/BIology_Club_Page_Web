@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
-    <title>Podcast</title>
-    <link href="Podcast/Audios/style.css" rel="stylesheet" type="text/css">
-
-    <!--infografias:-->
-    <!--Librerias-->
-
-    </head>
-
-    <body>
-
-<!--Boton regresar-->
-
-<img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">    
+<title>Podcast</title>
+<link href="Podcast/Audios/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Boton regresar -->
 <a href="index.html">
     <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
 </a>
-<!--Titulo-->
+
+<!-- Titulo -->
 <h2 class="border">BioPodcast</h2>
 <h2 class="wave">BioPodcast</h2>
-<!---->
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<!-- Cuenta regresiva -->
+<div id="countdown"></div>
 
-<!--Audios-->
+<!-- Audios -->
+<!-- ... -->
 
-<!---->
+<script>
+    // Función para mostrar la cuenta regresiva
+    function showCountdown() {
+      // Fecha objetivo para la cuenta regresiva
+    var countdownDate = new Date("2023-09-05T00:00:00Z").getTime();
 
+      // Actualizar la cuenta regresiva cada segundo
+    var countdown = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
 
-    </body>
-    </html>
+        // Cálculos para los días, horas, minutos y segundos restantes
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Mostrar la cuenta regresiva en el elemento con el id "countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // Cuando la cuenta regresiva termina, mostrar un mensaje
+        if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado!";
+        }
+    }, 1000);
+    }
+
+    // Llamar a la función para iniciar la cuenta regresiva
+    showCountdown();
+</script>
+</body>
+</html>
