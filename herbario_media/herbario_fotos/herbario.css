@@ -1,0 +1,234 @@
+.Title,#NoResult
+{
+line-height:1.8;
+    font-family: Forte;
+    color: #000;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.75);
+    font-size: 20;
+    background-color: rgba(93, 171, 26, 0.85)/*#50B554*/;
+    border-radius: 10px;
+    border: 1px solid #E1FBD4;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    perspective: 140px;
+    
+
+}
+.Title:hover
+{
+    background-color: #83BD51/*#60C1648*/;
+}
+
+
+#Text
+{
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
+    border:none;
+    padding-left: 35px;
+    background: url("http://image.ibb.co/i83ddG/Search.png") #fff no-repeat;
+    background-position: 10px 5px;
+    position: relative;
+    top:70;
+    margin-left: 40;
+    
+}
+#Text:focus
+{
+    outline: none;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.65);
+
+}
+
+.LanguageDetail
+{
+    background-color: rgba(255, 139, 121, 0.63);
+    width: 75%;
+    padding: 5%;
+    padding-right: 12%;
+    padding-left: 2%;
+    position: relative;
+    left:0;
+    right:0;
+    margin: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    color: #000;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: url("http://image.ibb.co/dRGgyG/Background_Image1.png") no-repeat;
+    background-size: 100% 100%;
+    display: none;
+
+
+}
+
+.LanguageLogo
+{
+    height:100;
+    width:100;
+    display: block;
+    margin: auto;
+}
+#Menu
+{
+    height:50px;
+    background: #344B4C;
+    width: 97%;
+    margin: auto;
+    transition: height 200ms linear;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+
+
+.MenuChild
+{
+    position:relative;
+    top:50;
+    height:32;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    padding-left: 80;
+    font-size: 15;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 40 0;
+}
+
+.MenuChild:hover
+{
+    background-color:rgba(137, 173, 175, 0.13);
+}
+
+#AboutProgramming
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+#MenuIcon
+{
+    position:relative;
+    right:5px;
+    top:3;
+    cursor:pointer;
+    
+}
+
+.CollapseLogo
+{
+    position:absolute  ;
+    left:90;
+    
+    
+    padding-top:11;
+    transition: transform 200ms linear;
+    -webkit-transition:-webkit-transform 200ms linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+#LoadingParent
+{
+    height: 400;
+    width: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #F5F5F5;
+
+
+}
+
+#CircleAnimation
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.Circles
+{
+    fill: #A5D8C0;
+}
+
+
+#L_Parent
+{
+height:40px;
+width: 40px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+bottom:70;
+margin: auto;
+
+
+
+}
+
+
+#Load
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 4px solid #F5F5F5;
+    border-top-color: #74678A;
+    background-clip: content-box;
+}
+
+#LoadingData
+{
+height: 30px;
+width: 30px;
+font-size: 12;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+top: 20%;
+left: 0%;
+right: 0%;
+margin: auto;
+}
+
+  /*Boton de regreso*/
+
+.img-back-to-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

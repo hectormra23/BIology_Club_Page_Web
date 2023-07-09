@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>Herbario medicinal</title>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="herbario_media/herbario_fotos/herbario.js"></script>
+<link rel="stylesheet" href="herbario_media/herbario_fotos/herbario.css">
+</head>
+    <body onload="HideLoadingBar()">
+        
+
+
+        <div id="Menu">
+
+            <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
+        <a href="index.html">
+        <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
+            </a>
+
+            
+            <img id="MenuIcon" src="http://image.ibb.co/daLYdG/menu_1.png" height="45" width="55" align="right" onclick="OpenMenu()"/>
+            <div class="MenuChild" style="background-image:url('http://image.ibb.co/fjQVsb/learning_1.png');" onclick="LearnMore()">Saber mas</div><br/>
+            <div class="MenuChild" style="background-image:url('http://image.ibb.co/geRQQw/B.png');background-size:32px 32px;" onclick="ShowAll()">Mostar todo</div><br/>
+            <div class="MenuChild" style="background-image:url('http://image.ibb.co/geRQQw/B.png');background-size:32px 32px;" onclick="HideAll()">Ocultar todo</div>
+            <input id="Text" type="text" onkeyup="Search()" placeholder="Search...." list="PlantsList"/>
+            
+            <datalist id="PlantsList">
+            <option value="Sábila "/>
+            <option value="Aloe vera"/>
+            <option value="Manzanilla"/>
+            <option value="Ruda"/>
+            <option value="Hierbabuena"/>
+            <option value="Hoja Santa "/>
+            <option value="Romero"/>
+            <option value="Hierba maestra  "/>
+            <option value="Epazote "/>
+            <option value="Orégano "/>
+            </datalist>
+            
+
+        </div>
+        <br/><br/>
+        <div id="AboutProgramming">
+         <br/>
+        <br/><br/>
+        
+    
+       
+       <div id="Parent" style="opacity: 0;transition: opacity 500ms linear;">
+
+<!--sabila-->
+
+           <div id="Sábila " class="Searchable" LR="0">
+              <div class="Title" onclick="ShowData('Sábila ')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               1. Sábila 
+             </div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/savila.png" class="LanguageLogo"/><br/>
+                  <b>Nombre comun: <i>Sábila .</i><br/>
+                  Nombre cientifico: <i>Aloe.</i><br/>
+                  Nombre nahualt: <i>Coapatli.</i> <br/>
+                  Uso medicinal: <i></i></b> <br/><br/>
+                  La sábila, es una planta suculenta que se utiliza con diversos fines debido a sus propiedades medicinales. Sus hojas contienen un gel transparente rico en compuestos bioactivos, como polisacáridos, vitaminas, minerales y enzimas. El gel de sábila se utiliza en aplicaciones tópicas para tratar afecciones de la piel, como quemaduras, heridas, irritaciones y problemas cutáneos. Además, se ha utilizado para promover la salud digestiva, fortalecer el sistema inmunológico y proporcionar alivio en casos de quemaduras solares. Sin embargo, es importante usarla con precaución y consultar a un profesional de la salud antes de su uso.<br/><br/>
+             </div>
+           </div>   
+       
+
+<!--Aloe vera-->
+      
+         <div id="Aloe vera" class="Searchable" LR="0">
+           <div class="Title" onclick="ShowData('Aloe vera')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               2. Aloe vera
+            </div>
+           <div class="LanguageDetail">
+             <img src="herbario_media/herbario_fotos/fotos/aloe.png" class="LanguageLogo"/><br/>
+             <b>Nombre comun: <i>Aloe vera.</i><br/>
+                Nombre cientifico: <i>Aloe vera.</i><br/>
+                Nombre nahualt: <i>huitzmetl.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                El aloe vera, o sábila, tiene múltiples usos medicinales. Su gel se aplica tópicamente para cicatrizar heridas, tratar problemas cutáneos como dermatitis y acné, y aliviar quemaduras solares. También se utiliza para mejorar la digestión y fortalecer el sistema inmunológico. Sin embargo, se debe tener precaución al consumirlo oralmente, ya que en altas dosis puede tener efectos laxantes. Además, es importante consultar a un profesional de la salud antes de usarlo con fines medicinales, especialmente si se está tomando medicamentos o se tienen condiciones de salud preexistentes.<br/><br/>
+           </div>
+        </div>
+       
+<!--Manzanilla -->
+      
+
+         <div id="Manzanilla " class="Searchable" LR="0">
+           <div class="Title" onclick="ShowData('Manzanilla ')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               3. Manzanilla  </div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/manzanilla-wide-removebg-preview(1).png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Manzanilla .</i><br/>
+                Nombre cientifico: <i>Matricaria chamomilla.</i><br/>
+                Nombre nahualt: <i>Xochipatli.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                La manzanilla es una hierba medicinal ampliamente utilizada por sus propiedades calmantes y relajantes. Se utiliza comúnmente en forma de té o infusiones para aliviar el estrés, la ansiedad y promover el sueño reparador. Además, la manzanilla se ha utilizado tradicionalmente para tratar problemas digestivos, como el malestar estomacal, los cólicos y la indigestión. Sus propiedades antiinflamatorias también la hacen útil en el alivio de dolores menstruales y de cabeza. La manzanilla contiene compuestos activos como flavonoides y terpenoides, que contribuyen a sus efectos beneficiosos. <br/><br/>
+            </div>
+         </div> 
+
+<!--Ruda-->
+
+         <div id="Ruda" class="Searchable" LR="0">
+           <div class="Title" onclick="ShowData('Ruda')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               4. Ruda</div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/ruda-removebg-preview.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Ruda.</i><br/>
+                Nombre cientifico: <i>Ruta.</i><br/>
+                Nombre nahualt: <i>Akuatsin .</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                La ruda es una planta medicinal utilizada para problemas digestivos y regulación menstrual. Se cree que estimula la digestión y alivia malestares estomacales, cólicos y flatulencia. Además, se ha utilizado para aliviar los síntomas del síndrome premenstrual y regularizar el ciclo menstrual. Sin embargo, su uso debe ser cauteloso, ya que altas dosis pueden ser tóxicas. Se recomienda consultar a un profesional de la salud antes de usarla, especialmente durante el embarazo o lactancia. Asimismo, su aplicación tópica puede causar reacciones alérgicas, por lo que se debe probar en una pequeña área de la piel antes de su uso generalizado. <br/><br/>
+            </div>
+         </div> 
+
+<!--Hierbabuena-->
+
+         <div id="Hierbabuena" class="Searchable" LR="0">
+           <div class="Title" onclick="ShowData('Hierbabuena')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               5. Hierbabuena</div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/hierbabuena-removebg-preview.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Hierbabuena .</i><br/>
+                Nombre cientifico: <i>Mentha spicata.</i><br/>
+                Nombre nahualt: <i>Alahuenotl.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                La hierbabuena, conocida como menta verde, posee propiedades medicinales versátiles. Se utiliza para aliviar problemas digestivos como indigestión y gases, gracias a su capacidad para relajar los músculos del tracto digestivo. También ayuda en la respiración al descongestionar las vías respiratorias y aliviar síntomas del resfriado y congestión nasal. Su aroma refrescante calma los nervios, alivia la ansiedad y promueve la relajación. Además, se ha utilizado tópicamente para aliviar dolores de cabeza y migrañas. Sin embargo, se debe tener precaución debido a posibles interacciones medicamentosas y reacciones alérgicas. Consultar a un profesional de la salud es recomendable antes de su uso. <br/><br/>
+            </div>
+         </div>
+
+<!--Hoja Santa-->
+
+         <div id="Hoja Santa" class="Searchable" LR="0">
+           <div class="Title"onclick="ShowData('Hoja Santa')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               6. Hoja Santa </div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/hierbasanta.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Hoja Santa .</i><br/>
+                Nombre cientifico: <i>Piper auritum.</i><br/>
+                Nombre nahualt: <i>tlanepakilitl, </i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                La hoja santa, también conocida como Piper auritum, es una planta utilizada en la cocina y la medicina tradicional. Se utiliza en la cocina mexicana para dar sabor y aroma a los platillos. Además, se le atribuyen propiedades digestivas, aliviando la indigestión y los cólicos. La hoja santa también posee propiedades antimicrobianas, combatiendo bacterias y hongos dañinos. Asimismo, contiene compuestos antioxidantes que protegen contra el daño de los radicales libres. Sin embargo, se recomienda consultar a un profesional de la salud antes de utilizarla con fines medicinales, ya que puede haber interacciones y efectos adversos en ciertas personas. <br/><br/>
+            </div>
+         </div>
+
+<!--Romero-->
+       
+        <div id="Romero" class="Searchable" LR="0">
+           <div class="Title"onclick="ShowData('Romero')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               7. Romero</div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/romero.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Romero.</i><br/>
+                Nombre cientifico: <i>Salvia rosmarinus.</i><br/>
+                Nombre nahualt: <i>tlamacehualnemiliztli.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                El romero es una hierba aromática con propiedades medicinales. Se ha utilizado durante siglos por sus beneficios para la salud. Sus compuestos activos poseen propiedades antioxidantes y antiinflamatorias. Se cree que el romero mejora la digestión, alivia dolores musculares y articulares, y estimula la circulación. También se ha utilizado para promover la concentración y la memoria, y para aliviar síntomas de estrés y ansiedad. Además, el romero se emplea en productos para el cuidado del cabello y la piel debido a sus propiedades fortalecedoras y rejuvenecedoras. Sin embargo, se recomienda precaución y consulta médica antes de usarlo con fines medicinales. <br/><br/>
+            </div>
+        </div>
+
+<!--Hierba maestra-->
+
+        <div id="Hierba maestra" class="Searchable" LR="0">
+           <div class="Title" onclick="ShowData('Hierba maestra')">
+               <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+               8. Hierba maestra  </div>
+           <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/hierbamaes.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Hierba maestra  .</i><br/>
+                Nombre cientifico: <i>Artemisia absinthium.</i><br/>
+                Nombre nahualt: <i>xihuitl.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                La hierba maestra, también conocida como Chenopodium ambrosioides, es una planta medicinal valorada por sus propiedades antiparasitarias y digestivas. Se utiliza para tratar trastornos digestivos como la indigestión, los cólicos y los parásitos intestinales. Sus compuestos activos han demostrado efectos antiparasitarios contra lombrices intestinales y otros parásitos. Además, se le atribuyen propiedades antiinflamatorias y antimicrobianas. Sin embargo, su uso debe ser supervisado y es importante seguir las recomendaciones de dosificación adecuadas. Se recomienda consultar a un profesional de la salud antes de usarla, especialmente durante el embarazo, la lactancia o en niños. <br/><br/>
+            </div>
+         </div>
+
+<!--Epazote-->
+
+
+        <div id="Epazote" class="Searchable" LR="0">
+        <div class="Title" onclick="ShowData('Epazote')">
+            <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+            9. Epazote </div>
+        <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/epazoote-removebg-preview.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Epazote.</i><br/>
+                Nombre cientifico: <i>Dysphania ambrosioides.</i><br/>
+                Nombre nahualt: <i>epasotl.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                El epazote es una hierba medicinal y culinaria con beneficios para la salud. Se utiliza para aliviar problemas digestivos como flatulencia y cólicos, gracias a su capacidad para estimular las enzimas digestivas. Además, se ha utilizado tradicionalmente como un vermífugo natural para eliminar parásitos intestinales. El epazote también tiene propiedades diuréticas suaves, promoviendo la eliminación de toxinas y líquidos del cuerpo. Además, se ha observado que tiene propiedades antimicrobianas, combatiendo bacterias y hongos. Sin embargo, su uso debe ser supervisado, especialmente durante el embarazo, debido a su potencial efecto abortivo. Es recomendable consultar a un profesional de la salud. <br/><br/>
+            </div>
+        </div>
+
+<!--Orégano-->
+
+        <div id="Orégano" class="Searchable" LR="0">
+        <div class="Title" onclick="ShowData('Orégano')">
+            <img class="CollapseLogo"src="http://image.ibb.co/iEfYdG/Collapse.png" height="15" width="15"/>
+            10. Orégano </div>
+        <div class="LanguageDetail">
+            <img src="herbario_media/herbario_fotos/fotos/oregano.png" class="LanguageLogo"/><br/>
+            <b>Nombre comun: <i>Oregano .</i><br/>
+                Nombre cientifico: <i>Origanum vulgare.</i><br/>
+                Nombre nahualt: <i>ahuiyaxihuitl.</i> <br/>
+                Uso medicinal: <i></i></b> <br/><br/>
+                El orégano es una hierba aromática que no solo se utiliza en la cocina, sino que también tiene propiedades medicinales. Contiene compuestos antioxidantes que protegen contra el daño de los radicales libres. Además, tiene propiedades antimicrobianas que pueden combatir infecciones y problemas de la piel. El orégano también se utiliza para aliviar problemas digestivos como la indigestión y la flatulencia. Además, posee propiedades antiinflamatorias que pueden ayudar a reducir la inflamación en condiciones como la artritis. Sin embargo, se debe tener precaución con el uso de aceite de orégano concentrado y se recomienda consultar a un profesional de la salud. <br/><br/>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+    <div id="NoResult" style="display:none;">No Results Found</div>
+
+    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="LoadingParent">
+        <svg id="CircleAnimation"> 
+            <circle class="Circles" r="5" cx="50" cy="250" tm="7" style="fill:chocolate"/>
+            <circle class="Circles" r="5" cx="70" cy="250" tm="6" style="fill:dodgerblue"/>
+            <circle class="Circles" r="5" cx="90"cy="250" tm="5" style="fill:yellow"/>
+            <circle class="Circles" r="5" cx="110"cy="250"  tm="4" style="fill:#9627C3"/>
+            <circle class="Circles" r="5" cx="130" cy="250"  tm="5" style="fill:#D83AD3"/>
+            <circle class="Circles" r="5" cx="150" cy="250" tm="6" style="fill:#26C53A" />
+            <circle class="Circles" r="5" cx="170"cy="250"  tm="7" style="fill:#FF9800"/>
+            <circle class="Circles" r="5" cx="190"cy="250"  tm="6" style="fill:#9627C3"/>
+            <circle class="Circles" r="5" cx="210"cy="250"  tm="5" style="fill:#D21E1E"/>
+            <circle class="Circles" r="5" cx="230"cy="250"  tm="4" style="fill:#0D4B98"/>
+            
+    
+        </svg>
+
+        <div id="L_Parent">
+            <div id="Load"></div>
+            <div id="LoadingData">Loading...</div>
+        </div>
+    </div>  
+
+
+
+
+    
+    </body>
+</html>
