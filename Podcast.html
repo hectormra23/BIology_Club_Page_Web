@@ -3,9 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">    
 <title>Podcast</title>
 <link href="Podcast/Audios/style.css" rel="stylesheet" type="text/css">
+<style>
+
+  /* Estilos para la cuadrícula de episodios */
+  .podcast-episodes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+
+ 
+    /* Estilos para cada episodio */
+    .podcast-episode {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .episode-image {
+      margin-bottom: 10px;
+    }
+
+    .episode-details {
+      margin-bottom: 20px;
+    }
+
+    .episode-details h3 {
+      margin: 0;
+    }
+
+
+    .episode-details p {
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2e2c2c;
+    text-align: left;
+    overflow-wrap: break-word;
+  }
+
+  .episode-details.active p {
+    display: block;
+  }
+
+</style>
+ <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const episodeDetails = document.querySelectorAll('.episode-details');
+      episodeDetails.forEach((episode) => {
+        const description = episode.querySelector('p');
+        description.addEventListener('click', (event) => {
+          event.stopPropagation();
+        });
+        episode.addEventListener('click', () => {
+          episode.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+
+
 </head>
 <body>
 <!-- Boton regresar -->
@@ -13,47 +76,187 @@
     <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
 </a>
 
-<!-- Titulo -->
-<h2 class="border" style="margin-top: 60px;">BioPodcast</h2>
-<h2 class="wave" style="margin-top: 60px;">BioPodcast</h2>
+<!-- Titulo --> 
+<h2 class="border" style="margin-top: 50px;">BioPodcast</h2>
+<h2 class="wave" style="margin-top: 50px;">BioPodcast</h2>
 
-<!-- Cuenta regresiva -->
-<div id="countdown"></div>
+<!--BIopodcast-->
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
 
-<!-- Audios -->
-<!-- ... -->
+<div class="podcast-episodes">
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 1:<h4> Episodio de prueba</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="Podcast/Audios/podcast1.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>El podcast 'Explorando el Cordyceps' es una inmersión fascinante en el mundo de este enigmático hongo.
+        <br/>A lo largo de cada episodio, descubrirás los secretos y propiedades sorprendentes del Cordyceps, desde su origen en los bosques tropicales hasta su impacto en la salud humana.
+        <br/>Expertos en micología y medicina comparten conocimientos y experiencias, revelando los beneficios potenciales de este hongo en el sistema inmunológico, la energía, el rendimiento físico y más.
+        <br/>Además, conocerás historias cautivadoras sobre la interacción del Cordyceps con otros organismos y su papel en los ecosistemas.
+        <br/>Prepárate para adentrarte en un mundo fascinante lleno de maravillas micológicas.</p>
+    </div>
+  </div>
 
-<script>
-    // Función para mostrar la cuenta regresiva
-    function showCountdown() {
-      // Fecha objetivo para la cuenta regresiva
-    var countdownDate = new Date("2023-09-05T00:00:00Z").getTime();
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 2:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
 
-      // Actualizar la cuenta regresiva cada segundo
-    var countdown = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countdownDate - now;
 
-        // Cálculos para los días, horas, minutos y segundos restantes
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  <!-- Agrega más episodios aquí -->
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 3:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
 
-        // Mostrar la cuenta regresiva en el elemento con el id "countdown"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 4:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
 
-        // Cuando la cuenta regresiva termina, mostrar un mensaje
-        if (distance < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado!";
-        }
-    }, 1000);
-    }
 
-    // Llamar a la función para iniciar la cuenta regresiva
-    showCountdown();
-</script>
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 5:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 6:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 7:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 8:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 9:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+  <div class="podcast-episode">
+    <div class="episode-image">
+      <img src="img/logo_club.jpg" width="200" height="300" alt="Imagen del episodio">
+    </div>
+    <div class="episode-details">
+      <h3>Episodio 10:<h4> Título del episodio</h4></h3>
+      <div class="audio-player">
+        <audio controls>
+          <source src="ruta_al_archivo.mp3" type="audio/mpeg">
+          Tu navegador no admite el elemento de audio.
+        </audio>
+      </div>
+      <p>Descripción del episodio...</p>
+    </div>
+  </div>
+
+
+</div>
+
 </body>
 </html>

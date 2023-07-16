@@ -6,9 +6,7 @@ padding: 0;
 }
 
 body {
-font-family: "Work Sans", sans-serif;
-letter-spacing: 2vmin;
-display: flex;  
+font-family: "Work Sans", sans-serif; 
 height: 100vh;
 width: 100vw;
 
@@ -63,99 +61,49 @@ transform: translateY(-0.8em);
     cursor: pointer;
 }
 
-    /*Imagenes*/
-    
-    .contenedor-imagen 
-        {
-            display: inline-block;
-            margin-top: 200px;
-            display: inline-block;
-            padding: 5px;
-            
-        }
-    
-    .contenedor-imagen img 
-        {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-        #imagen
-        {
-            image-rendering: auto;
-            border-image: repeat;
-        }
-    
-    
-    /*Imagenes*/
-    
-    .contenedor-imagen 
-        {
-            display: inline-block;
-            margin-top: 200px;
-            display: inline-block;
-            padding: 5px;
-            
-        }
-    
-    .contenedor-imagen img 
-        {
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-        #imagen
-        {
-            image-rendering: auto;
-            border-image: repeat;
-        }
-    
-    
 
-/*Audios*/
 
-.audio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.audio-wrapper {
+/* Estilos para la sección del podcast */
+#biopodcast {
     margin-bottom: 20px;
-    text-align: center;
 }
 
-audio {
-    margin-bottom: 10px;
-}
-.audio-wrapper h {
-    color: rgb(17, 161, 36);
-    font-style: italic;
-}  
-
-/* Estilos para la cuenta regresiva */
-#countdown {
-    font-size: 48px;
-    text-align: center;
-    margin-top: 500px;
+.podcast-episodes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
 
-#countdown .countdown-box {
-    display: inline-block;
-    margin: 0 10px;
-    width: 80px;
-    height: 80px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 80px;
-    text-align: center;
+.podcast-episode {
+    display: flex;
+    align-items: center;
 }
 
-#countdown .unit {
-    font-size: 24px;
-    color: #ffffff;
+.episode-image {
+    margin-right: 10px;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+.episode-details h3 {
+    margin: 0;
+}
+
+.episode-details p {
+    margin-top: 10px;
+}
+
+h3{
+    color:rgb(237, 243, 232);
+}
+h4{
+
+    color: aquamarine;
+}
+
+p 
+{
+    color: antiquewhite;
 }
