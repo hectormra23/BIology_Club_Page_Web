@@ -1,1 +1,1 @@
-alert("hola uwu")
+console.log('funciona')
