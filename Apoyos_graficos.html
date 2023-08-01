@@ -1,24 +1,89 @@
 <!DOCTYPE html>
-    <html lang="eng">
-        <head>
-            <link rel="icon" href="img/logocirculo.png" type="image/x-icon">
-            <link rel="stylesheet" href="media_apoyo_grafico/style.css">
-            <a href="index.html">
-                <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
-            </a>
-            <script src="media_apoyo_grafico/script.js"></script>
+<html lang="eng">
+<head>
+    <link rel="icon" href="img/logocirculo.png" type="image/x-icon">
+    <link rel="stylesheet" href="media_apoyo_grafico/style.css">
+    <a href="index.html">
+        <img class="img-back-to-home" src="Podcast/Audios/imgs/brand.png" alt="Botón de regresar a inicio" width="120px" height="120px">
+    </a>
+    <script src="media_apoyo_grafico/script.js"></script>
+    <script src="ruta-a-lightgallery/lightgallery.js"></script>
+</head>
+<body>
+    <h2 class="border" style="margin-top: 10px;">Apoyos gráficos</h2>
+    <h2 class="wave" style="margin-top: 10px;">Apoyos gráficos</h2>
+    <!--Imágenes:-->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-        </head>
-            <body>
-                <h2 class="border" style="margin-top: 50px;">Apoyos graficos</h2>
-                <h2 class="wave" style="margin-top: 50px;">Apoyos graficos</h2>
-<!--Imagnes:-->
 
 
+<div class="album">
+    <!-- Agregar la clase "lightbox-trigger" a las imágenes para habilitar el lightbox y zoom -->
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (1).jpg" alt="Imagen 1">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (2).jpg" alt="Imagen 2">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (3).jpg" alt="Imagen 3">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (4).jpg" alt="Imagen 4">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (5).jpg" alt="Imagen 5">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (6).jpg" alt="Imagen 6">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (7).jpg" alt="Imagen 7">
+    <img class="lightbox-trigger" src="media_apoyo_grafico\apoyos (8).jpg" alt="Imagen 8">
+    
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox">
+    <div class="lightbox-arrow lightbox-prev">&#8249;</div>
+    <div class="lightbox-arrow lightbox-next">&#8250;</div>
+    <img src="" alt="Imagen en lightbox">
+</div>
+<script>
+    // JavaScript para manejar el evento clic en las imágenes y mostrar el lightbox
+    const lightboxTrigger = document.querySelectorAll('.lightbox-trigger');
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImg = document.querySelector('.lightbox img');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    let currentIndex = 0;
+
+    function showLightbox(index) {
+        lightboxImg.src = lightboxTrigger[index].src;
+        lightbox.style.display = 'block';
+        currentIndex = index;
+    }
+
+    function prevImage() {
+        if (currentIndex > 0) {
+            showLightbox(currentIndex - 1);
+        }
+    }
+
+    function nextImage() {
+        if (currentIndex < lightboxTrigger.length - 1) {
+            showLightbox(currentIndex + 1);
+        }
+    }
+
+    lightboxTrigger.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => {
+            showLightbox(index);
+        });
+    });
+
+    lightboxPrev.addEventListener('click', prevImage);
+    lightboxNext.addEventListener('click', nextImage);
+
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox || event.target === lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    });
+</script>
 
 
-
-
-
-            </body>
-    </html>
+</body>
+</html>
