@@ -17,7 +17,7 @@ body {
 /*titulo*/
 h2 {
     font-size: 15vmin;
-    position: fixed;
+    position: absolute;
     }
     .border {
     color: black;  
