@@ -39,4 +39,5 @@ Contacto
 Si tienes preguntas, sugerencias o deseas unirte al club, por favor contáctanos a través de hectormra23@gmail.com visita nuestra página web https://sprightly-marzipan-f8c9c8.netlify.app/index.html.
 
 
-¡Gracias por visitar la página del Club de Biología del Colegio de Bachilleres del Estado de Tlaxcala Plantel 06 Contla! Esperamos que encuentres información y recursos útiles relacionados con la biología. Si tienes alguna sugerencia o c
+¡Gracias por visitar la página del Club de Biología del Colegio de Bachilleres del Estado de Tlaxcala Plantel 06 Contla! 
+
