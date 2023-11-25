@@ -1,49 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eventos</title>
-<link rel="icon" href="img/logocirculo.png" type="image/x-icon">
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<title>Coming-Soon Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="more_data/style.css">
 </head>
 <body>
-    <!--boton regresar-->
-    <img class="img-back-to-home" src="infografias/imagenes/Boton_regresar.png" alt="Botón de regresar a inicio" width="120px" height="120px">
-    <a href="index.html">
-        <img class="img-back-to-home" src="infografias/imagenes/Boton_regresar.png" alt="Botón de regresar a inicio" width="120px" height="120px">
-    </a>
-    <style>
-/*Botton regresar*/
-
-.img-back-to-home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-
-
-    </style>
-
-    <!---->
-    <h1 style="color: rgb(1, 155, 26); font-style: italic; margin-top: 80px;">Presentacion del herbario medicinal</h1><h3 >(en vivo)</h3>
-<div id="player"></div>
-<script type="text/javascript">
-    var options = {
-    width: 1500,
-    height: 900,
-    channel: "miguelrodrix",
-      // puedes usar "channel" para transmitir en vivo desde un canal específico, o
-      // puedes usar "video" para reproducir un video específico, o
-      // puedes usar "collection" para reproducir una colección de videos
-      parent: ["streamernews.example.com"] // reemplaza "streamernews.example.com" con tu propio dominio
-    };
-    var player = new Twitch.Player("player", options);
-    player.setVolume(0.5);
-</script>
+<div class="container">
+    <div class="bg">
+    <video src="more_data/bg.mp4" muted autoplay loop></video>
+    </div>
+    <h1>Proximamente</h1>
+    <h3>Sitio en matenimiento</h3>
+    <div class="progress-bar"><span></span></div>
+    <div class="sm">
+    </div>
+</div>
 </body>
 </html>
