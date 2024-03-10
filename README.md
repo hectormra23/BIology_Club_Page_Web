@@ -17,6 +17,10 @@ Instalación y Uso
     Clona este repositorio en tu máquina local.
     Abre el archivo index.html en tu navegador para ver la página web.
     Explora las diferentes secciones y funcionalidades de la página.
+    ![imagen](https://github.com/hectormra23/BIology_Club_Page_Web/assets/88894715/7681565a-8636-4ac8-bf3a-7b826f9fd22d)
+
+
+    
 
 Tecnologías Utilizadas
 
