@@ -1,0 +1,27 @@
+Documentación del Código JavaScript
+Manejo del Evento de Clic en el Botón del Menú
+
+javascript
+
+document.querySelector(".menu-btn").addEventListener("click", () => {
+  document.querySelector(".nav-menu").classList.toggle("show");
+});
+
+    Selecciona el botón del menú con la clase .menu-btn y agrega un escuchador de eventos para el evento de clic.
+    Cuando se hace clic en el botón del menú, se selecciona el menú de navegación con la clase .nav-menu y se alterna la clase show, lo que muestra u oculta el menú de navegación.
+
+Revelación de Elementos al Desplazarse (Scroll Reveal)
+
+javascript
+
+ScrollReveal().reveal('.showcase');
+ScrollReveal().reveal('.news-cards', { delay: 500 });
+ScrollReveal().reveal('.cards-banner-one', { delay: 500 });
+ScrollReveal().reveal('.cards-banner-two', { delay: 500 });
+
+    Utiliza la biblioteca Scroll Reveal para revelar elementos cuando se desplaza la página.
+    Selecciona elementos con las clases .showcase, .news-cards, .cards-banner-one y .cards-banner-two y los revela.
+    Se establece un retraso de 500 milisegundos para las clases .news-cards, .cards-banner-one y .cards-banner-two, lo que significa que aparecerán después de 500 milisegundos después de que se haya desvelado el elemento .showcase.
+
+
+    

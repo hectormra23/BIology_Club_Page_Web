@@ -1,0 +1,22 @@
+# Documentación del Código
+
+## Etiquetas de Metadatos en el Encabezado (Head)
+- `<!DOCTYPE html>`: Define el tipo de documento a HTML5.
+- `<html lang="en">`: Define el idioma del documento como inglés.
+- `<meta charset="UTF-8">`: Define la codificación de caracteres para el documento a UTF-8.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Hace que la página web sea responsive en diferentes dispositivos.
+- `<title>Tlali nantli</title>`: Define el título del documento que se muestra en la pestaña del navegador.
+
+## Enlaces a Fuentes y Estilos Externos
+- Google Fonts y Font Awesome se utilizan para las fuentes y los iconos, respectivamente.
+- Se incluye un enlace a un archivo CSS externo (`styles.css`).
+
+## Cuerpo del Documento (Body)
+- El cuerpo del documento contiene varios elementos, incluyendo un botón de menú, una barra de navegación, un encabezado y tarjetas de noticias.
+- El botón de menú (`<div class="menu-btn">`) contiene un icono de barras (hamburguesa) de Font Awesome.
+- La barra de navegación contiene un logotipo y dos listas de enlaces. Los enlaces llevan a varias páginas como "Club", "Estudiantes", "Infografias", etc.
+- El encabezado de la vitrina (`<header class="showcase">`) contiene un título y una descripción.
+- Las tarjetas de noticias (`<div class="news-cards">`) contienen una imagen, un título y un párrafo de texto.
+
+## Comentarios en el Código
+- Hay un bloque de código CSS comentado que parece estar destinado a ser activado en diciembre. Este bloque de código aplica una animación de nieve al cuerpo del documento.

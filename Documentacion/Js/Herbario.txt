@@ -1,0 +1,140 @@
+Documentación del Código JavaScript
+Variables Globales
+
+javascript
+
+var MovingUpSpeed = 5;
+var InitialValues = [7, 6, 5, 4, 5, 6, 7, 6, 5, 4];
+var deg = 0;
+var Time = 1;
+
+    MovingUpSpeed: Velocidad de movimiento hacia arriba.
+    InitialValues: Valores iniciales para ciertas operaciones.
+    deg: Grado de rotación.
+    Time: Tiempo para ciertas operaciones.
+
+Función Search()
+
+javascript
+
+function Search() {
+  // Obtiene el texto de búsqueda del elemento con id "Text"
+  var Text = document.getElementById("Text").value.toUpperCase();
+  var Elements = document.getElementsByClassName("Searchable");
+  var ElementText;
+  var ResultNum = 0;
+  
+  if (Text.length == 0) {
+    for (var i = 0; i < Elements.length; i++) {
+      Elements[i].style.display = "";
+    }
+    return;
+  }
+  
+  for (var i = 0; i < Elements.length; i++) {
+    ElementText = Elements[i].getAttribute("id").toUpperCase();
+    if (ElementText.substring(0, Text.length) == Text) {
+      ResultNum++;
+      Elements[i].style.display = "";
+    } else {
+      Elements[i].style.display = "none";
+    }
+  }
+  
+  if (ResultNum == 0 && Text.length != 0) {
+    document.getElementById("NoResult").style.display = "";
+  } else {
+    document.getElementById("NoResult").style.display = "none";
+  }
+}
+
+    Esta función realiza una búsqueda en tiempo real de elementos coincidentes según el texto ingresado en un campo de búsqueda.
+
+Función ShowData(e)
+
+javascript
+
+function ShowData(e) {
+  var El = document.getElementById(e).children[1];
+  var index = $(".LanguageDetail").index(El);
+  var MainElement = document.getElementsByClassName("LanguageDetail")[index];
+  
+  $(MainElement).slideToggle(300);
+  
+  var Logo = document.getElementById(e).children[0].children[0];
+  var LogoRotation = parseInt(document.getElementById(e).getAttribute("LR"));
+  
+  if (LogoRotation == 0) {
+    Logo.style.transform = "rotate(90deg)";
+    Logo.style.webkitTransform = "rotate(90deg)";
+    document.getElementById(e).setAttribute("LR", "90");
+  } else {
+    Logo.style.transform = "rotate(0deg)";
+    Logo.style.webkitTransform = "rotate(0deg)";
+    document.getElementById(e).setAttribute("LR", "0");
+  }
+}
+
+    Esta función muestra o oculta datos al hacer clic en un elemento.
+    También rota un logotipo asociado.
+
+Función OpenMenu()
+
+javascript
+
+function OpenMenu() {
+  var Element = document.getElementById("Menu");
+  var Height = parseInt($(Element).css("height"));
+  
+  if (Height == 50) {
+    Element.style.height = 250;
+  } else {
+    Element.style.height = 50;
+  }
+}
+
+    Esta función abre o cierra un menú al hacer clic en un botón.
+
+Función ShowAll() y HideAll()
+
+javascript
+
+function ShowAll() {
+  document.getElementById("Text").value = "";
+  var Elements = document.getElementsByClassName("LanguageDetail");
+  var CurrentElement;
+  var CollapseLogo = document.getElementsByClassName("CollapseLogo");
+  
+  for (var i = 0; i < Elements.length; i++) {
+    CurrentElement = Elements[i];
+    CollapseLogo[i].style.transform = "rotate(90deg)";
+    CollapseLogo[i].style.webkitTransform = "rotate(90deg)";
+    document.getElementsByClassName("Searchable")[i].setAttribute("LR", 90);
+    $(CurrentElement).show(1000);
+  }
+}
+
+function HideAll() {
+  var Elements = document.getElementsByClassName("LanguageDetail");
+  var CurrentElement;
+  var CollapseLogo = document.getElementsByClassName("CollapseLogo");
+  
+  for (var i = 0; i < Elements.length; i++) {
+    CurrentElement = Elements[i];
+    CollapseLogo[i].style.transform = "rotate(0deg)";
+    CollapseLogo[i].style.webkitTransform = "rotate(0deg)";
+    document.getElementsByClassName("Searchable")[i].setAttribute("LR", 0);
+    $(CurrentElement).hide(1000);
+  }
+}
+
+    ShowAll(): Esta función muestra todos los elementos con una animación.
+    HideAll(): Esta función oculta todos los elementos con una animación.
+
+Otras Funciones
+
+    LearnMore(): Redirige a una página web.
+    MoveCircles(): Mueve los círculos en una animación.
+    Load(): Controla una barra de carga.
+    HideLoadingBar(): Oculta la barra de carga.
+    Se establecen intervalos para ciertas funciones que se ejecutan periódicamente.

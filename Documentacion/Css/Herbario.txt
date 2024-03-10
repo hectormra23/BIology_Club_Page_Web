@@ -1,0 +1,261 @@
+Documentación del Código
+Estilos para el Título y NoResult
+
+css
+
+.Title,#NoResult {
+    line-height: 1.8;
+    font-family: Forte;
+    color: #000;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.75);
+    font-size: 20;
+    background-color: rgba(93, 171, 26, 0.85);
+    border-radius: 10px;
+    border: 1px solid #E1FBD4;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    perspective: 140px;
+}
+
+    line-height: Define el espacio entre líneas para el título y NoResult.
+    font-family: Especifica la fuente del texto como Forte.
+    color: Establece el color del texto en negro.
+    box-shadow: Agrega una sombra alrededor del título y NoResult.
+    font-size: Establece el tamaño de la fuente en 20 píxeles.
+    background-color: Define el color de fondo utilizando un valor RGBA.
+    border-radius: Define el radio de los bordes para crear esquinas redondeadas.
+    border: Establece un borde alrededor del elemento con un ancho de 1 píxel y un color determinado.
+    text-align: Centra el texto dentro del elemento.
+    width: Establece el ancho del elemento en el 90% del contenedor.
+    height: Establece la altura del elemento en 40 píxeles.
+    margin: Centra el elemento horizontalmente en la página.
+    cursor: Define el cursor del mouse como puntero para indicar interactividad.
+    perspective: Establece la perspectiva cuando se usa con propiedades 3D.
+
+Estilos al Pasar el Mouse sobre el Título
+
+css
+
+.Title:hover {
+    background-color: #83BD51;
+}
+
+    Define el color de fondo cuando el mouse se coloca sobre el título.
+
+Estilos para el Elemento #Text
+
+css
+
+#Text {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
+    border: none;
+    padding-left: 35px;
+    background: url("http://image.ibb.co/i83ddG/Search.png") #fff no-repeat;
+    background-position: 10px 5px;
+    position: relative;
+    top: 70;
+    margin-left: 40;
+}
+
+    Establece el tamaño y posición del elemento #Text.
+    Agrega una sombra alrededor del elemento.
+    Define un fondo con una imagen de búsqueda.
+    Posiciona la imagen de búsqueda dentro del campo de texto.
+    Define el espacio entre la imagen y el texto.
+
+Estilos para el Detalle del Lenguaje (LanguageDetail)
+
+css
+
+.LanguageDetail {
+    background-color: rgba(255, 139, 121, 0.63);
+    width: 75%;
+    padding: 5%;
+    padding-right: 12%;
+    padding-left: 2%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    color: #000;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: url("http://image.ibb.co/dRGgyG/Background_Image1.png") no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+    Define el estilo del detalle del lenguaje.
+    Establece el color de fondo utilizando un valor RGBA.
+    Define el ancho del elemento en un 75% del contenedor.
+    Define el relleno del contenido.
+    Posiciona el elemento relativamente y lo centra horizontalmente.
+    Alinea el texto a la izquierda.
+    Especifica la fuente y tamaño del texto.
+    Define el color del texto en negro.
+    Agrega un fondo con una imagen de fondo.
+
+Estilos para el Menú (#Menu) y sus Elementos (MenuChild)
+
+css
+
+#Menu {
+    height: 50px;
+    background: #344B4C;
+    width: 97%;
+    margin: auto;
+    transition: height 200ms linear;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.MenuChild {
+    position: relative;
+    top: 50;
+    height: 32;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    padding-left: 80;
+    font-size: 15;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 40 0;
+}
+
+.MenuChild:hover {
+    background-color: rgba(137, 173, 175, 0.13);
+}
+
+    Establece el estilo del menú y sus elementos.
+    Define la altura y color de fondo del menú.
+    Especifica el ancho del menú en un 97% del contenedor y lo centra horizontalmente.
+    Define la transición de altura con duración de 200ms.
+    Oculta el desbordamiento del contenido que excede la altura del menú.
+    Define la opacidad del menú como 0.
+    Define el estilo de los elementos del menú.
+    Define la posición, altura, color de texto, familia de fuente, relleno, tamaño de fuente y cursor de los elementos del menú.
+    Establece un estilo diferente al pasar el mouse sobre los elementos del menú.
+
+Estilos para el Contenido #AboutProgramming
+
+css
+
+#AboutProgramming {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+    Establece el estilo del contenido sobre programación.
+    Define la familia de fuente y tamaño de fuente.
+    Especifica el margen izquierdo y derecho del contenido.
+    Alinea el texto justificado.
+    Define la opacidad del contenido como 0 y establece una transición de opacidad con duración de 500ms.
+
+Estilos para el Icono del Menú (#MenuIcon)
+
+css
+
+#MenuIcon {
+    position: relative;
+    right: 5px;
+    top: 3;
+    cursor: pointer;
+}
+
+    Define el estilo del icono del menú.
+    Especifica la posición, desplazamiento hacia la derecha, desplazamiento hacia arriba y cursor del icono del menú.
+
+Estilos para la Animación de Carga (#LoadingParent, #CircleAnimation, #L_Parent, #Load, #LoadingData)
+
+css
+
+#LoadingParent {
+    height: 400;
+    width: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #F5F5F5;
+}
+
+#CircleAnimation {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#L_Parent {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 70;
+    margin: auto;
+}
+
+#Load {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 4px solid #F5F5F5;
+    border-top-color: #74678A;
+    background-clip: content-box;
+}
+
+#LoadingData {
+    height: 30px;
+    width: 30px;
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+    Define los estilos para la animación de carga.
+    Establece el tamaño, posición, margen y fondo del contenedor de la animación.
+    Define el tamaño, posición y fondo de la animación circular.
+    Especifica el tamaño, posición y apariencia del elemento de carga.
+    Define el tamaño, fuente y posición del texto de carga.
+
+Estilos para el Botón de Regreso (.img-back-to-home)
+
+css
+
+.img-back-to-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+    Define el estilo del botón de regreso.
+    Especifica la posición, desplazamiento hacia arriba, desplazamiento hacia la izquierda, ancho, altura y cursor del botón de regreso.

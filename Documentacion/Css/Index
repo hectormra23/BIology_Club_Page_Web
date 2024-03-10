@@ -1,0 +1,45 @@
+Este código CSS contiene estilos para la página web, proporcionando la apariencia visual y el diseño. Aquí hay una descripción de las secciones principales:
+
+### Estilos Generales
+- Se establecen reglas generales para el `box-sizing`, `margin` y `padding` de todos los elementos, utilizando el selector universal (`*`).
+
+### Estilos de la Navegación
+- Se definen estilos para la barra de navegación (`nav-main`), incluyendo el diseño flexible, tamaño de fuente y espaciado.
+- Se establecen estilos para la lista de elementos de navegación (`nav-main ul`) y para los enlaces (`nav-main ul li a`). También se define un estilo de resaltado para los enlaces cuando se pasa el cursor sobre ellos.
+
+### Estilos del Botón del Menú Responsivo
+- Se establecen estilos para el botón del menú responsivo (`menu-btn`), que se muestra en pantallas de menor tamaño.
+- Se define un estilo de hover para el botón del menú.
+
+### Estilos del Encabezado Principal (Showcase)
+- Se definen estilos para el encabezado principal (`showcase`), incluyendo el fondo y el diseño de texto.
+
+### Estilos de las Tarjetas de Noticias (News Cards)
+- Se establecen estilos para las tarjetas de noticias (`news-cards`), que se muestran en una cuadrícula.
+- Se definen estilos para las imágenes, títulos y enlaces dentro de las tarjetas de noticias.
+
+### Estilos de los Banners de Tarjetas (Cards Banners)
+- Se definen estilos para los banners de tarjetas (`cards-banner-one` y `cards-banner-two`), que contienen contenido con fondo de imagen.
+- Se establecen estilos para el contenido dentro de los banners de tarjetas, incluyendo el texto y el espaciado.
+
+### Estilos de Seguimiento Social (Social)
+- Se establecen estilos para el área de seguimiento social (`social`), incluyendo el tamaño del texto y el espaciado.
+- Se definen estilos para los enlaces de redes sociales dentro del área de seguimiento social.
+
+### Estilos del Pie de Página (Footer)
+- Se establecen estilos para los enlaces del pie de página (`footer-links`), incluyendo el color de fondo, color del texto y tamaño de fuente.
+- Se definen estilos para el contenedor del pie de página (`footer-container`) y para la lista de elementos dentro de él.
+
+### Estilos Responsivos
+- Se definen estilos específicos para pantallas de menor tamaño utilizando consultas de medios (`@media`). Esto incluye cambios en el diseño de navegación, diseño de las tarjetas de noticias y diseño del pie de página para adaptarse a dispositivos móviles y tabletas.
+
+Además, se agregaron estilos personalizados para los elementos `h2`, `h3` y `p`, estableciendo colores y tamaños de fuente específicos para estos elementos. También hay reglas para los identificadores `#titulo` y `#descript`, que afectan a elementos específicos con esos identificadores en el HTML.
+
+
+
+
+
+## Se aplica el mismo CSS a todas las "Secciones" Exepto:
+
+Seccion Alunmos , de establece el color 'whithe' o '000000'.
+Seccion de 'Herbario' a continuacion la documentacion en otro archivo. 

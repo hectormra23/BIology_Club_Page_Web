@@ -1,0 +1,29 @@
+# Documentación del Código
+
+## Etiquetas de Metadatos en el Encabezado (Head)
+- `<!DOCTYPE html>`: Define el tipo de documento a HTML5.
+- `<html lang="eng">`: Define el idioma del documento como inglés (incorrecto, debería ser `en`).
+
+### Enlaces a Estilos Externos y Scripts
+- `<link rel="icon" href="img/logocirculo.png" type="image/x-icon">`: Define el ícono de la pestaña del navegador.
+- `<link rel="stylesheet" href="media_apoyo_grafico/style.css">`: Enlaza un archivo CSS externo para estilizar la página.
+- `<script src="media_apoyo_grafico/script.js"></script>`: Enlaza un archivo JavaScript externo.
+- `<script src="ruta-a-lightgallery/lightgallery.js"></script>`: Enlaza otro archivo JavaScript externo.
+
+## Cuerpo del Documento (Body)
+- Se incluye un botón de regresar a la página de inicio.
+- Se definen dos títulos para la sección de apoyos gráficos.
+
+### Contenedor de Imágenes (`<div class="album">`)
+- Se crean contenedores para las imágenes que se mostrarán como apoyos gráficos.
+
+### Lightbox
+- Se implementa un lightbox para mostrar las imágenes en tamaño ampliado al hacer clic en ellas.
+- Se incluyen botones de navegación para desplazarse entre las imágenes.
+
+### Script JavaScript
+- Se utiliza JavaScript para manejar el evento de clic en las imágenes y mostrar el lightbox.
+- Se definen funciones para mostrar la imagen ampliada, retroceder y avanzar entre las imágenes.
+- Se añaden escuchadores de eventos para los clics en las imágenes y los botones de navegación.
+
+Este código HTML crea una página de apoyos gráficos que muestra imágenes en un lightbox al hacer clic en ellas. Los estilos CSS y los scripts JavaScript externos proporcionan funcionalidades adicionales y mejoran la experiencia del usuario al interactuar con las imágenes.

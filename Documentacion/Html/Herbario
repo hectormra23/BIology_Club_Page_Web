@@ -1,0 +1,20 @@
+Este código HTML muestra una página web sobre un herbario medicinal. Aquí hay una descripción del contenido:
+
+### Encabezado (Head)
+- `<title>Herbario medicinal</title>`: Establece el título de la página como "Herbario medicinal".
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Define la configuración de visualización inicial para dispositivos móviles.
+- Se incluyen enlaces a archivos CSS y JavaScript externos para estilizar y agregar funcionalidades a la página.
+- Se utiliza jQuery, una biblioteca de JavaScript, para facilitar la manipulación del DOM y el manejo de eventos.
+
+### Cuerpo del Documento (Body)
+- Se carga la función `HideLoadingBar()` al cargar la página para ocultar la barra de carga.
+- Se define un menú que incluye un botón de regreso, un icono de menú para abrir y cerrar opciones adicionales, y opciones de menú para "Saber más", "Mostrar todo" y "Ocultar todo".
+- Se proporciona un campo de búsqueda para filtrar las plantas medicinales.
+- Se incluye información sobre las plantas medicinales y sus propiedades. Cada planta tiene un nombre común, científico y en náhuatl, junto con su uso medicinal y una breve descripción.
+- Se utiliza JavaScript para mostrar u ocultar detalles adicionales sobre cada planta cuando se hace clic en ellas.
+
+### Estilos CSS y JavaScript
+- Se proporciona un archivo CSS externo para estilizar los elementos de la página.
+- Se carga un archivo JavaScript externo para agregar funcionalidades interactivas, como mostrar u ocultar detalles de las plantas y filtrar las opciones de búsqueda.
+
+En resumen, la página web presenta información sobre varias plantas medicinales, incluyendo sus nombres comunes y científicos, sus usos medicinales y una descripción de sus propiedades. Además, proporciona opciones interactivas para explorar y buscar información sobre estas plantas.

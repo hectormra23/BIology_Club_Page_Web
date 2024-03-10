@@ -1,0 +1,19 @@
+Este código HTML muestra una página de "Próximamente" o "Coming Soon", que se utiliza típicamente para informar a los visitantes que un sitio web está en construcción y pronto estará disponible. Aquí tienes una descripción de los elementos principales:
+
+### Encabezado (Head)
+- Se establece el conjunto de caracteres (`charset`) como UTF-8.
+- Se define la compatibilidad con Internet Explorer (`X-UA-Compatible`) para garantizar que la página se renderice correctamente en versiones antiguas de IE.
+- Se establece la escala inicial de la ventana gráfica (`viewport`) para dispositivos móviles.
+- El título de la página se establece como "Coming-Soon Page".
+- Se enlaza el archivo CSS de Font Awesome para utilizar iconos en la página.
+- Se enlaza un archivo CSS externo llamado "style.css" ubicado en la carpeta "more_data" para estilizar los elementos de la página.
+
+### Cuerpo del Documento (Body)
+- Se crea un contenedor principal con la clase "container".
+- Dentro del contenedor, se encuentra un elemento de fondo (`<div class="bg">`) que contiene un video de fondo (`<video>`). El video se encuentra en la ruta "more_data/bg.mp4" y está configurado para reproducirse en bucle (`loop`) y sin sonido (`muted`).
+- Se muestra un encabezado principal `<h1>` que dice "Próximamente".
+- Se muestra un subencabezado `<h3>` que indica "Sitio en construcción".
+- Hay una barra de progreso (`<div class="progress-bar">`) que indica visualmente el progreso de la construcción del sitio.
+- También puede haber iconos de redes sociales (`<div class="sm">`) u otros elementos adicionales que podrían agregarse más adelante.
+
+En resumen, esta página proporciona una vista preliminar visualmente atractiva de un sitio web que está en construcción, junto con un mensaje claro sobre su estado y una barra de progreso para indicar el progreso.

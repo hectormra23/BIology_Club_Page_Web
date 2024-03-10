@@ -1,0 +1,23 @@
+El código HTML proporciona una página web que muestra información sobre los estudiantes del club "Tlali nantli". Aquí está la documentación del código:
+
+### Encabezado (Head)
+- `<!DOCTYPE html>`: Define el tipo de documento como HTML5.
+- `<title>Estudiantes</title>`: Establece el título de la página como "Estudiantes".
+- `<link rel="icon" href="img/logocirculo.png" type="image/x-icon">`: Define el ícono de la pestaña del navegador.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Asegura que la página se adapte a diferentes dispositivos.
+- `<link href="media_estudiantes/estudiantes.css" rel="stylesheet" type="text/css">`: Enlaza una hoja de estilo CSS externa.
+- Estilos CSS internos: Se definen estilos para las imágenes y sus descripciones.
+
+### Cuerpo del Documento (Body)
+- Se utiliza un contenedor `<center>` para centrar el título principal.
+- Se incluye un título principal `<h1>` que describe el contenido de la página.
+- Se usan varios contenedores `<div>` con la clase `.image-container` para cada estudiante.
+- Dentro de cada contenedor de imagen, se incluye una etiqueta `<img>` para mostrar la imagen del estudiante y una etiqueta `<div>` con la clase `.image-description` para mostrar la descripción del estudiante.
+- Se proporciona una lista de estudiantes con sus respectivas descripciones.
+- Se incluye un botón de regreso a la página de inicio al final del documento.
+
+### Estilos CSS
+- Se definen estilos para los contenedores de imagen y sus descripciones.
+- Al pasar el cursor sobre cada imagen, se muestra la descripción correspondiente.
+
+El código HTML presenta de manera organizada la información sobre los estudiantes del club "Tlali nantli" junto con sus respectivas imágenes y descripciones.

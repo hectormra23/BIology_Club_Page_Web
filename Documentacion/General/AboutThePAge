@@ -1,0 +1,104 @@
+Declaración de tipo de documento (DOCTYPE):
+
+html
+
+<!DOCTYPE html>
+
+Indica que este documento es un HTML5.
+
+Encabezado (Head):
+
+    Contiene metadatos como el conjunto de caracteres y la configuración de la vista.
+    Define el título de la página.
+    Enlaza fuentes externas y hojas de estilo.
+    Configura el ícono de la pestaña del navegador.
+    También tiene un comentario que parece ser un estilo que posiblemente se activará en diciembre, pero que está comentado actualmente.
+
+html
+
+<head>
+  <!-- Metadatos, título, enlaces a fuentes, ícono -->
+</head>
+
+Cuerpo (Body):
+
+    Contiene el contenido visible de la página web.
+    Incluye un menú de navegación, un encabezado (header) con un título y descripción, tarjetas de noticias (news-cards), un banner (cards-banner-two) con un mensaje y enlaces a redes sociales.
+    Al final del cuerpo, hay un pie de página (footer) y se incluyen scripts para Scroll Reveal.
+
+html
+
+<body>
+  <!-- Contenido visible de la página -->
+</body>
+
+Menú de Navegación:
+
+    Se compone de dos secciones: izquierda (nav-menu) y derecha (nav-menu-right).
+    Contiene enlaces a diferentes secciones de la página y un enlace externo a una búsqueda.
+
+html
+
+<nav class="nav-main">
+  <!-- Contenido del menú -->
+</nav>
+
+Encabezado (header):
+
+    Muestra el título y descripción del sitio.
+
+html
+
+<header class="showcase">
+  <!-- Título y descripción -->
+</header>
+
+Tarjetas de Noticias (news-cards):
+
+    Muestran imágenes y breves descripciones de noticias o eventos.
+
+html
+
+<div class="news-cards">
+  <!-- Contenido de las tarjetas de noticias -->
+</div>
+
+Banner (cards-banner-two):
+
+    Muestra un mensaje y posiblemente un enlace.
+
+html
+
+<section class="cards-banner-two">
+  <!-- Contenido del banner -->
+</section>
+
+Redes Sociales (social):
+
+    Muestra enlaces a perfiles de redes sociales.
+
+html
+
+<section class="social">
+  <!-- Enlaces a redes sociales -->
+</section>
+
+Pie de Página (footer):
+
+    Contiene información de derechos de autor u otros detalles relevantes.
+
+html
+
+<footer class="footer">
+  <!-- Contenido del pie de página -->
+</footer>
+
+Scripts:
+
+    Importa Scroll Reveal y un script personalizado (main.js).
+
+html
+
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
