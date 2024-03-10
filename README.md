@@ -17,11 +17,7 @@ Instalación y Uso
     Clona este repositorio en tu máquina local.
     Abre el archivo index.html en tu navegador para ver la página web.
     Explora las diferentes secciones y funcionalidades de la página.
-    ![imagen](https://github.com/hectormra23/BIology_Club_Page_Web/assets/88894715/7681565a-8636-4ac8-bf3a-7b826f9fd22d)
-
-
     
-
 Tecnologías Utilizadas
 
     HTML5 y CSS3 para la estructura y diseño de la página.
@@ -39,6 +35,7 @@ Contribución
 
 
 Contacto
+
 
 Si tienes preguntas, sugerencias o deseas unirte al club, por favor contáctanos a través de hectormra23@gmail.com visita nuestra página web https://sprightly-marzipan-f8c9c8.netlify.app/index.html.
 
